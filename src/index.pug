@@ -1,1 +1,9 @@
 extends _component/layout/layout
+block spuer-config
+    -
+        let title = 'My blog is awesome'
+        let description= `Finally, it's alive.`
+
+block awesome-content
+    h1=title
+    p=description

@@ -6,3 +6,36 @@
     src: local('Lustria'), local('Lustria-Regular'), url(https://fonts.gstatic.com/s/lustria/v5/9oRONYodvDEyjuhOnC8zMw.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
+
+  @font-face {
+    font-family: 'my-blog';
+    src:
+      url('asset/font/my-blog.ttf?x0dmeh') format('truetype'),
+      url('asset/font/my-blog.woff?x0dmeh') format('woff'),
+      url('asset/font/my-blog.svg?x0dmeh#my-blog') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="mb-"], [class*=" mb-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'my-blog' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .mb-menu:before {
+    content: "\e9bd";
+  }
+  .mb-cross:before {
+    content: "\ea0f";
+  }
+  
